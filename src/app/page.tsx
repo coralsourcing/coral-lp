@@ -16,9 +16,7 @@ export default function HomePage() {
       <Navigation />
       <main>
         <Hero />
-        <div className="container max-w-[1200px] mx-auto px-6">
-          <TrustedBy />
-        </div>
+        <TrustedBy />
         <OurRoles />
         <OurMethod />
         <OurSolutions />

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Section from "@/components/ui/section";
 
 const screeningItems = [
   {
@@ -55,8 +56,7 @@ const ScreeningItem = ({ item }: ScreeningItemProps) => {
 
 const OurScreening = () => {
   return (
-    <section className="bg-background py-20 lg:py-24">
-      <div className="container max-w-[1200px] mx-auto px-6">
+    <Section className="bg-background">
         <div className="flex flex-col lg:flex-row lg:gap-12 xl:gap-20">
           <div className="lg:w-5/12 flex-shrink-0">
             <div className="lg:max-w-sm">
@@ -74,8 +74,7 @@ const OurScreening = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

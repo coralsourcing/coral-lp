@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Section from "@/components/ui/section";
 
 const faqData = [
   {
@@ -54,8 +55,7 @@ const faqData = [
 
 const Faqs = () => {
   return (
-    <section className="bg-background py-24">
-      <div className="container max-w-[1200px] mx-auto px-6">
+    <Section className="bg-background">
         <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-[320px_1fr] lg:gap-x-20">
           <div>
             <h2 className="text-4xl font-bold tracking-tight text-foreground">FAQs</h2>
@@ -78,8 +78,7 @@ const Faqs = () => {
             </Accordion>
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

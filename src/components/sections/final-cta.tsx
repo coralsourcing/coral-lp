@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import Section from "@/components/ui/section";
 
 const FinalCta = () => {
   return (
     <>
       <div className="border-t border-border" />
-      <section className="bg-background py-20 md:py-24 lg:py-32">
-        <div className="container max-w-[1200px] mx-auto px-6">
+      <Section className="bg-background">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-24">
             <div>
               <h2 className="text-[44px] font-bold leading-tight tracking-tight text-foreground">
@@ -32,8 +32,7 @@ const FinalCta = () => {
               />
             </div>
           </div>
-        </div>
-      </section>
+      </Section>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Section from "@/components/ui/section";
 
 type Testimonial = {
   quoteIconUrl: string;
@@ -46,8 +47,7 @@ const testimonialsData: Testimonial[] = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-background py-20">
-      <div className="container max-w-[1200px] mx-auto px-6">
+    <Section className="bg-background">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-4xl font-bold text-foreground mb-10">Our Clients</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full text-left">
@@ -77,6 +77,5 @@ export default function Testimonials() {
             )}
           </div>
         </div>
-      </div>
-    </section>);
+    </Section>);
 }

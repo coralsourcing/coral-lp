@@ -1,4 +1,5 @@
 import React from 'react';
+import Section from "@/components/ui/section";
 
 const methodSteps = [
   {
@@ -31,8 +32,7 @@ const OurMethod = () => {
   return (
     <>
       <div className="h-px bg-border" />
-      <section className="bg-background py-20 lg:py-24">
-        <div className="container max-w-[1200px] mx-auto px-6">
+      <Section className="bg-background">
           <div className="flex flex-col items-start gap-16">
             <div className="max-w-lg">
               <h2 className="text-[40px] font-bold leading-tight tracking-[-0.02em] text-foreground">
@@ -56,8 +56,7 @@ const OurMethod = () => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
+      </Section>
     </>
   );
 };

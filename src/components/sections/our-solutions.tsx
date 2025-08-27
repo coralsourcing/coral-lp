@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Section from "@/components/ui/section";
 
 const solutions = [
   {
@@ -37,8 +38,7 @@ const solutions = [
 
 const OurSolutions = () => {
   return (
-    <section className="py-24 bg-white">
-      <div className="container max-w-[1200px] mx-auto px-6">
+    <Section className="bg-white">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-[40px] font-bold leading-[1.2] text-black">
             Our Solutions
@@ -95,8 +95,7 @@ const OurSolutions = () => {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

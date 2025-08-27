@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import Section from "@/components/ui/section";
 
 const Hero = () => {
   return (
-    <section className="bg-background py-20 lg:py-28">
-      <div className="container mx-auto px-6 max-w-[1200px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <Section className="bg-background">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
           <div className="flex flex-col items-start text-left">
             <h1 className="text-[56px] font-bold leading-[1.1] text-foreground max-w-[440px]">
@@ -39,8 +39,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

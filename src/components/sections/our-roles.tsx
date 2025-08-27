@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Section from "@/components/ui/section";
 
 const rolesData = [
   {
@@ -45,8 +46,7 @@ const rolesData = [
 
 const OurRoles = () => {
   return (
-    <section className="bg-background py-20 lg:py-24">
-      <div className="container max-w-[1200px] mx-auto px-6">
+    <Section className="bg-background">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-20">
           <div className="lg:col-span-1">
             <div className="max-w-xs">
@@ -83,8 +83,7 @@ const OurRoles = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Section from "@/components/ui/section";
 
 const logos = [
   {
@@ -21,7 +22,7 @@ const logos = [
 
 const TrustedBy = () => {
   return (
-    <div className="mt-10">
+    <Section>
       <div className="flex items-center gap-4">
         <p className="flex-shrink-0 text-xs text-muted-foreground whitespace-nowrap">
           Trusted by teams at
@@ -38,7 +39,7 @@ const TrustedBy = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
